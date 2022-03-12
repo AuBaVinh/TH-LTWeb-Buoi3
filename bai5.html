@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bài 5</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<div id="KQ"></div>
+		<script>
+			function Time()
+			{
+				var ht= new Date();
+				var gio= ht.getHours();
+				var phut=ht.getMinutes();
+				var giay=ht.getSeconds();
+				//document.write('Bây giờ là ' +gio+':'+phut+':'+giay)
+				document.getElementById('KQ').innerHTML='Bây giờ là ' +gio+':'+phut+':'+giay;
+			}
+			setInterval(Time, 1000)
+			Time();
+		</script>
+	</body>
+</html>
